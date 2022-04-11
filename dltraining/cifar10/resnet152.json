@@ -1,0 +1,14 @@
+{
+    "dataset": {
+        "name": "cifar10",
+        "size": "294.58 MiB",
+        "shape": [32, 32, 3],
+        "class": 10,
+        "sample": 50000,
+        "split": "train"
+    },
+    "model": {
+        "name": "resnet152"
+    }
+}
+
