@@ -1,6 +1,6 @@
 # canary
 
-The current version of this project is tested on baremetal and in serverless environment using Apache OpenWhisk. The underlying operating system in all deployment environment is Ubuntu 18.04 LTS, and the deployment is orchestrated with Kubernetes with up to 8 nodes.
+The current version of this project is tested on baremetal and in serverless environment using Apache OpenWhisk. The underlying operating system in all deployment environment is Ubuntu 18.04 LTS, and the deployment is orchestrated with Kubernetes with up to 16 nodes.
 
 In order to use the provided scripts, please ensure you have root access to the machine and have cloned this repository into the `home` directory.
 
