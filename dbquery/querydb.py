@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-#!/usr/bin/env python3
 import psycopg2
 import subprocess, time
 from psycopg2.extras import Json
@@ -41,4 +39,3 @@ def main(args):
     print("CANARY ::> Job completed -> Time = {0}.s".format(time.time()-initTime))
 
     return {'CANARY STATUS': "Queries completed successfully."}
-

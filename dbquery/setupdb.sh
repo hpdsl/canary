@@ -1,7 +1,4 @@
 #!/bin/bash
-# CSCI-620: Introduction to Bigdata
-# Project (Part 1)
-# Moiz Arif (ma3890@rit.edu), Avinash, Sarthak, Chaitanya
 
 echo "Starting program"
 echo "Using default user postgres"
