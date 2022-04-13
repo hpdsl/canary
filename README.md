@@ -1,6 +1,6 @@
 # canary
 
-The current version of this project is tested on baremetal and in serverless environment using Apache OpenWhisk. The underlying operating system in all deployment environment is Ubuntu 18.04 LTS. The deployment is orchestrated with Kubernetes and consists in up to 8 nodes.
+The current version of this project is tested on baremetal and in serverless environment using Apache OpenWhisk. The underlying operating system in all deployment environment is Ubuntu 18.04 LTS, and the deployment is orchestrated with Kubernetes with up to 8 nodes.
 
 In order to use the provided scripts, please ensure you have root access to the machine and have cloned this repository into the `home` directory.
 
@@ -16,7 +16,7 @@ The configuration of a Kubernetes cluster for this project requires the followin
 * Helm
 * Kubernetes
 * OpenWhisk
-* MongoDB for database query workloads. 
+* MongoDB for database query workloads.
 
 
 Install all requirements and build the serverless environment.
@@ -73,7 +73,13 @@ $ source ~/.bashrc
 
 ### Execution
 
-For our evaluation:
+For our evaluation, we built a docker runtime image with workload dependencies and Openwhisk packages such as:
+
+* Deep Learning Training: `hpdsl/canary:dltrain`
+* Data Mining with Spark: `hpdsl/canary:sparkdiversity`
+* Database query: `hpdsl/canary:dbquery`
+
+In order to execute our evaluation workloads with *Canary*, run the following command.
 
 ```
 $ canary <job> -m <model> -d <dataset> -b <batch> -e <epoch> -t <type>
