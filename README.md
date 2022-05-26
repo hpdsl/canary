@@ -12,16 +12,14 @@ $ git clone https://github.com/hpdsl/canary.git
 
 The configuration of a Kubernetes cluster for this project requires the following software packages:
 
-* Docker
-* Helm
-* Kubernetes
-* OpenWhisk
-* MongoDB for database query workloads.
+* Docker version 20.10.16
+* Helm version 2.16.1
+* Kubernetes version 1.21
+* OpenWhisk CLI version 1.2.0
+* MongoDB version v5.0.8 for database query workloads.
 
 
-Install all requirements and build the serverless environment.
-
-Run this command only on the master node of the Kubernetes cluster, not on the worker nodes.
+The installation of these software packages has been automated. Therefore, to have all requirements installed and build the serverless environment, run the following command on the master node of the Kubernetes cluster.
 
 ```
 $ make install
